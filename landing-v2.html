@@ -1,0 +1,880 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>El sistema en Notion que convierte tu conocimiento en contenido viral — Jay Personal Brand</title>
+<meta name="description" content="12 plantillas de guiones con IA, 50 ganchos virales y un banco con 100 ideas probadas. Todo en Notion. Precio de lanzamiento: $17.">
+
+<!-- ══════════════════════════════════════════════════════════════════════════
+     ⬇⬇⬇  ÚNICO LUGAR QUE HAY QUE EDITAR PARA CAMBIAR EL CHECKOUT  ⬇⬇⬇
+     Todos los botones con data-cta leen esta variable.
+     ══════════════════════════════════════════════════════════════════════════ -->
+<script>
+  const CHECKOUT_URL = "https://www.jaypersonalbrand.com/sales-page?next_funnel_step=1218457da818536ecafc51061ef900bdd6806c83ec0e1fa2e56155de7ee689bc";
+</script>
+<!-- ⬆⬆⬆  FIN DE LA ZONA EDITABLE  ⬆⬆⬆ -->
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Space+Grotesk:wght@400;500;700&display=swap" rel="stylesheet">
+
+<style>
+  :root{
+    --bg:#0B0B10;          /* fondo base */
+    --bg2:#0D0D16;         /* fondo alterno (secciones) */
+    --panel:#101018;       /* paneles / marcos */
+    --ink:#F4F4F8;         /* texto principal */
+    --muted:#9a99a8;       /* texto secundario */
+    --accent:#7C5CFF;      /* violeta eléctrico */
+    --accent2:#4CC9F0;     /* cian del degradado */
+    --line:rgba(124,92,255,.28);
+    --r:16px;
+  }
+  *{margin:0;padding:0;box-sizing:border-box}
+  html{scroll-behavior:smooth;overflow-x:clip}
+  @media (prefers-reduced-motion: reduce){ html{scroll-behavior:auto} *{transition:none!important;animation:none!important} }
+  body{
+    font-family:'Inter',system-ui,sans-serif;color:var(--ink);background:var(--bg);
+    line-height:1.65;-webkit-font-smoothing:antialiased;overflow-x:hidden;
+  }
+  img{max-width:100%;display:block}
+  a{text-decoration:none;color:inherit}
+  .wrap{max-width:1020px;margin:0 auto;padding:0 22px}
+  section,header.hero{padding:84px 0}
+  @media(max-width:640px){section,header.hero{padding:58px 0}}
+
+  h1,h2{font-family:'Space Grotesk',sans-serif;font-weight:700;letter-spacing:-.03em;line-height:1.05}
+  h1{font-size:clamp(2.4rem,6vw,4.1rem)}
+  h2{font-size:clamp(1.9rem,4.4vw,3rem)}
+  .grad{
+    background:linear-gradient(92deg,var(--accent) 10%,var(--accent2) 90%);
+    -webkit-background-clip:text;background-clip:text;color:transparent;
+  }
+  .kicker{
+    display:inline-flex;align-items:center;gap:.55rem;
+    font-size:.72rem;font-weight:700;letter-spacing:.16em;text-transform:uppercase;
+    color:#cfc9ff;background:rgba(124,92,255,.14);border:1px solid var(--line);
+    border-radius:100px;padding:.4rem 1rem;margin-bottom:1.6rem;
+  }
+  .kicker .dot{width:7px;height:7px;border-radius:50%;background:var(--accent);box-shadow:0 0 10px var(--accent)}
+  .sub{font-size:clamp(1rem,1.9vw,1.18rem);color:var(--muted)}
+  .cta-row{text-align:center}
+
+  .btn{
+    display:inline-flex;flex-direction:column;gap:.15rem;align-items:center;
+    background:linear-gradient(92deg,var(--accent),#9b7bff);color:#fff;border-radius:12px;
+    padding:1.1rem 2.7rem;box-shadow:0 12px 34px rgba(124,92,255,.45);
+    transition:transform .12s ease, box-shadow .12s ease;max-width:100%;text-align:center;
+  }
+  .btn:hover{transform:translateY(-2px);box-shadow:0 16px 40px rgba(124,92,255,.6)}
+  .btn:focus-visible{outline:3px solid var(--accent2);outline-offset:3px}
+  .btn strong{font-family:'Space Grotesk',sans-serif;font-size:1.12rem;font-weight:700}
+  .btn span{font-size:.78rem;color:rgba(255,255,255,.78)}
+
+  /* ══════════ 1 · HERO (opción B elegida) ══════════ */
+  .hero{
+    text-align:center;padding-top:72px;
+    background:
+      radial-gradient(900px 480px at 50% -12%, rgba(124,92,255,.28), transparent 65%),
+      linear-gradient(rgba(124,92,255,.05) 1px, transparent 1px),
+      linear-gradient(90deg, rgba(124,92,255,.05) 1px, transparent 1px),
+      var(--bg);
+    background-size:auto, 42px 42px, 42px 42px, auto;
+  }
+  .hero h1{max-width:18ch;margin:0 auto 1.1rem}
+  .hero .sub{max-width:58ch;margin:0 auto .5rem}
+  .hero .no-need{font-size:.9rem;font-weight:600;opacity:.85;margin-bottom:2.6rem}
+  .vsl-wrap{position:relative;max-width:780px;margin:0 auto 2.4rem}
+  .vsl-wrap::before{
+    content:"";position:absolute;inset:-3px;border-radius:18px;z-index:0;
+    background:linear-gradient(120deg,var(--accent),var(--accent2),var(--accent));filter:blur(1px);
+  }
+  .vsl-wrap::after{
+    content:"";position:absolute;inset:-40px;border-radius:40px;z-index:-1;
+    background:radial-gradient(closest-side,rgba(124,92,255,.4),transparent 70%);filter:blur(30px);
+  }
+  .vsl{
+    position:relative;z-index:1;aspect-ratio:16/9;border-radius:var(--r);background:var(--panel);
+    display:flex;flex-direction:column;align-items:center;justify-content:center;gap:14px;overflow:hidden;
+  }
+  .vsl iframe,.vsl video{width:100%;height:100%;border:0}
+  .vsl .play{
+    width:80px;height:80px;border-radius:50%;
+    background:linear-gradient(135deg,var(--accent),var(--accent2));
+    display:grid;place-items:center;box-shadow:0 10px 40px rgba(124,92,255,.55);
+  }
+  .vsl .play::after{content:"";border-style:solid;border-width:13px 0 13px 21px;border-color:transparent transparent transparent #fff;margin-left:5px}
+  .vsl small{color:rgba(244,244,248,.5);font-size:.72rem;font-weight:600;letter-spacing:.22em;text-transform:uppercase}
+  .proof{display:flex;align-items:center;justify-content:center;gap:.9rem;margin-top:1.8rem;text-align:left}
+  .proof p{font-size:.85rem;color:var(--muted);line-height:1.4}
+  .proof b{color:var(--ink)}
+  .avatars{display:flex}
+  .avatars img{width:38px;height:38px;border-radius:50%;object-fit:cover;border:2px solid var(--bg);margin-left:-9px}
+  .avatars img:first-child{margin-left:0}
+  .stars{color:#FFC53D;font-size:.8rem;letter-spacing:.12em}
+  @media(max-width:640px){.proof{flex-direction:column;gap:.6rem;text-align:center}}
+
+  /* ══════════ 2 · EL SISTEMA (estilo Ultimate Brain) ══════════ */
+  .sistema{
+    position:relative;
+    background:radial-gradient(700px 420px at 50% 115%, rgba(76,201,240,.10), transparent 70%), var(--bg2);
+    border-top:1px solid rgba(124,92,255,.15);
+  }
+  .sistema{text-align:center}
+  .sistema h2{max-width:22ch;margin:0 auto 1.1rem}
+  .sistema > .wrap > .sub{max-width:60ch;margin:0 auto}
+  .shot{
+    max-width:860px;margin:2.8rem auto 0;border-radius:var(--r);overflow:hidden;
+    border:1px solid var(--line);background:var(--panel);
+    box-shadow:0 0 0 6px rgba(124,92,255,.06), 0 30px 80px -20px rgba(0,0,0,.7), 0 0 60px rgba(124,92,255,.12);
+  }
+  .shot-bar{display:flex;align-items:center;gap:6px;background:#15151f;padding:.6rem .9rem;border-bottom:1px solid rgba(124,92,255,.18)}
+  .shot-bar i{width:10px;height:10px;border-radius:50%;background:rgba(255,255,255,.18)}
+  .shot-bar i:nth-child(1){background:var(--accent)}
+  .shot-bar em{margin-left:.5rem;font-style:normal;font-size:.72rem;font-weight:600;color:rgba(255,255,255,.5)}
+  .shot img{width:100%}
+  .shot-after{max-width:680px;margin:2.6rem auto 0;text-align:center}
+  .shot-after p{color:var(--muted);font-size:clamp(.98rem,1.8vw,1.08rem);margin-top:1rem}
+  .shot-after p strong{color:var(--ink);font-weight:600}
+  .shot-after .closing{
+    margin-top:1.8rem;color:var(--ink);
+    font-family:'Space Grotesk',sans-serif;font-weight:500;letter-spacing:-.01em;
+    font-size:clamp(1.1rem,2.2vw,1.4rem);line-height:1.4;
+  }
+  .shot-after .closing .grad{font-weight:700}
+
+  /* flechita de continuación (fin sección 2) */
+  .scroll-cue{display:flex;justify-content:center;margin-top:2.6rem}
+  .scroll-cue svg{width:34px;height:34px;filter:drop-shadow(0 0 10px rgba(124,92,255,.5));animation:cue 1.8s ease-in-out infinite}
+  @keyframes cue{0%,100%{transform:translateY(0);opacity:.7}50%{transform:translateY(8px);opacity:1}}
+  @media (prefers-reduced-motion: reduce){.scroll-cue svg{animation:none}}
+
+  /* ══════════ 3 · CARACTERÍSTICAS (zigzag estilo Ultimate Brain) ══════════ */
+  .feats{background:var(--bg)}
+  .feats .intro{text-align:center;max-width:640px;margin:0 auto 1rem}
+  .feats .intro h2{margin-bottom:1rem}
+  .feat{
+    display:grid;grid-template-columns:1fr 1fr;gap:3.2rem;align-items:center;
+    padding:3.4rem 0;
+  }
+  .feat + .feat{border-top:1px solid rgba(124,92,255,.10)}
+  .feat:nth-child(even) .feat-media{order:-1}
+  @media(max-width:820px){
+    .feat{grid-template-columns:1fr;gap:1.6rem;padding:2.4rem 0}
+    .feat:nth-child(even) .feat-media{order:0}
+  }
+  .feat-txt .emoji{font-size:1.7rem;display:block;margin-bottom:.7rem}
+  .feat-txt h3{
+    font-family:'Space Grotesk',sans-serif;font-weight:700;letter-spacing:-.02em;
+    font-size:clamp(1.35rem,2.6vw,1.8rem);line-height:1.15;margin-bottom:.9rem;
+  }
+  .feat-txt p{color:var(--muted);font-size:.99rem;margin-top:.8rem}
+  .feat-txt p strong{color:var(--ink);font-weight:600}
+
+  /* medias: marco de ventana; hoy con maqueta CSS, luego se reemplaza por la imagen real */
+  .feat-media{position:relative}
+  .fm{
+    border-radius:var(--r);overflow:hidden;border:1px solid var(--line);background:var(--panel);
+    box-shadow:0 24px 60px -18px rgba(0,0,0,.7), 0 0 40px rgba(124,92,255,.10);
+  }
+  .fm-bar{display:flex;align-items:center;gap:6px;background:#15151f;padding:.55rem .85rem;border-bottom:1px solid rgba(124,92,255,.18)}
+  .fm-bar i{width:9px;height:9px;border-radius:50%;background:rgba(255,255,255,.18)}
+  .fm-bar i:first-child{background:var(--accent)}
+  .fm-bar em{margin-left:.45rem;font-style:normal;font-size:.68rem;font-weight:600;color:rgba(255,255,255,.5)}
+  .fm-body{padding:1.1rem 1.2rem;display:grid;gap:.55rem}
+  .fm img{width:100%;display:block}
+  .fm-row{
+    display:flex;align-items:center;gap:.6rem;background:rgba(255,255,255,.03);
+    border:1px solid rgba(255,255,255,.06);border-radius:9px;padding:.6rem .8rem;font-size:.8rem;font-weight:600;
+  }
+  .fm-row .grow{flex:1;min-width:0;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+  .fm-chip{font-size:.58rem;font-weight:700;letter-spacing:.06em;text-transform:uppercase;padding:.16rem .5rem;border-radius:5px;white-space:nowrap}
+  .fm-chip.v{background:rgba(124,92,255,.22);color:#cfc9ff;border:1px solid rgba(124,92,255,.45)}
+  .fm-chip.a{background:rgba(76,201,240,.16);color:#a8e6f8;border:1px solid rgba(76,201,240,.4)}
+  .fm-chip.c{background:rgba(255,255,255,.06);color:var(--muted);border:1px solid rgba(255,255,255,.12)}
+  .fm-num{font-family:'Space Grotesk',sans-serif;font-weight:700;color:var(--accent2);font-size:.75rem;flex:none}
+  .fm-dots{letter-spacing:.2em;color:var(--muted)}
+  .fm-prompt{background:#0a0a12;border:1px solid rgba(124,92,255,.3);border-radius:9px;padding:.85rem .9rem;font-size:.78rem;line-height:1.6;color:var(--muted)}
+  .fm-prompt b{color:#cfc9ff;display:block;font-size:.62rem;letter-spacing:.12em;text-transform:uppercase;margin-bottom:.4rem}
+  .fm-copy{margin-left:auto;background:linear-gradient(92deg,var(--accent),#9b7bff);color:#fff;font-size:.62rem;font-weight:700;padding:.28rem .6rem;border-radius:6px;flex:none}
+
+  /* pasos del proceso */
+  .step-tag{display:flex;align-items:baseline;gap:.7rem;margin-bottom:.8rem}
+  .step-tag .n{
+    font-family:'Space Grotesk',sans-serif;font-weight:700;font-size:2.1rem;line-height:1;
+    background:linear-gradient(92deg,var(--accent),var(--accent2));
+    -webkit-background-clip:text;background-clip:text;color:transparent;
+  }
+  .step-tag .lbl{font-size:.68rem;font-weight:700;letter-spacing:.22em;text-transform:uppercase;color:var(--muted)}
+  .fm-blk{
+    border-left:3px solid var(--accent);background:rgba(255,255,255,.04);
+    border-radius:8px;padding:.6rem .8rem;font-size:.78rem;line-height:1.5;color:var(--muted);
+  }
+  .fm-blk b{display:block;color:#cfc9ff;font-size:.6rem;letter-spacing:.12em;text-transform:uppercase;margin-bottom:.25rem}
+  .fm-ok{display:flex;align-items:center;gap:.5rem;justify-content:center;background:rgba(76,201,240,.10);border:1px solid rgba(76,201,240,.35);border-radius:9px;padding:.55rem .8rem;font-size:.78rem;font-weight:700;color:#a8e6f8}
+  .fm-input{border:1.5px dashed rgba(124,92,255,.5);background:transparent;color:var(--muted);border-radius:9px;padding:.6rem .8rem;font-size:.8rem;font-weight:600}
+
+  /* bloque "además" */
+  .extras-head{text-align:center;margin:4.2rem auto 2rem;max-width:600px}
+  .extras-head h3{
+    font-family:'Space Grotesk',sans-serif;font-weight:700;letter-spacing:-.02em;
+    font-size:clamp(1.4rem,3vw,2rem);margin-bottom:.6rem;
+  }
+  .extras-head p{color:var(--muted);font-size:.98rem}
+  .extras{display:grid;grid-template-columns:1fr 1fr;gap:1.6rem}
+  @media(max-width:820px){.extras{grid-template-columns:1fr}}
+  .extra{
+    border:1px solid rgba(124,92,255,.18);border-radius:var(--r);
+    background:rgba(255,255,255,.02);padding:1.5rem;
+    display:flex;flex-direction:column;gap:1.1rem;
+  }
+  .extra .emoji{font-size:1.5rem}
+  .extra h4{font-family:'Space Grotesk',sans-serif;font-weight:700;font-size:1.15rem;letter-spacing:-.01em;margin:.4rem 0 .5rem}
+  .extra p{color:var(--muted);font-size:.93rem}
+  .extra p strong{color:var(--ink);font-weight:600}
+
+  /* ══════════ 4 · BONOS ══════════ */
+  .bonos{
+    background:radial-gradient(700px 400px at 50% -5%, rgba(124,92,255,.14), transparent 70%), var(--bg2);
+    border-top:1px solid rgba(124,92,255,.15);text-align:center;
+  }
+  .bonos .overline{
+    font-size:.74rem;font-weight:700;letter-spacing:.24em;text-transform:uppercase;
+    background:linear-gradient(92deg,var(--accent),var(--accent2));
+    -webkit-background-clip:text;background-clip:text;color:transparent;
+    display:block;margin-bottom:1rem;
+  }
+  .bonos h2{max-width:24ch;margin:0 auto 1rem}
+  .bonos > .wrap > .sub{max-width:56ch;margin:0 auto}
+  .bono-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1.5rem;margin-top:3rem;text-align:left}
+  @media(max-width:900px){.bono-grid{grid-template-columns:1fr;max-width:460px;margin-left:auto;margin-right:auto}}
+  .bono-card{
+    border:1px solid rgba(124,92,255,.20);border-radius:var(--r);overflow:hidden;
+    background:rgba(255,255,255,.02);display:flex;flex-direction:column;
+    transition:transform .15s ease, border-color .15s ease;
+  }
+  .bono-card:hover{transform:translateY(-4px);border-color:rgba(124,92,255,.45)}
+  .bcover{
+    position:relative;aspect-ratio:16/10;overflow:hidden;
+    background:
+      radial-gradient(220px 160px at 78% 18%, rgba(76,201,240,.25), transparent 70%),
+      radial-gradient(260px 200px at 15% 90%, rgba(124,92,255,.35), transparent 70%),
+      #14141f;
+    display:flex;align-items:center;justify-content:center;
+    border-bottom:1px solid rgba(124,92,255,.18);
+  }
+  .bcover .bplay{
+    width:62px;height:62px;border-radius:50%;
+    background:linear-gradient(135deg,var(--accent),var(--accent2));
+    display:grid;place-items:center;box-shadow:0 8px 30px rgba(124,92,255,.5);
+  }
+  .bcover .bplay::after{content:"";border-style:solid;border-width:10px 0 10px 16px;border-color:transparent transparent transparent #fff;margin-left:4px}
+  .bcover .bdur{
+    position:absolute;right:.8rem;bottom:.8rem;
+    background:rgba(11,11,16,.75);border:1px solid rgba(255,255,255,.14);backdrop-filter:blur(4px);
+    color:var(--ink);font-size:.66rem;font-weight:700;letter-spacing:.06em;
+    padding:.25rem .55rem;border-radius:6px;
+  }
+  .bcover .bnum{
+    position:absolute;left:.8rem;top:.8rem;
+    font-size:.62rem;font-weight:700;letter-spacing:.14em;text-transform:uppercase;
+    background:linear-gradient(92deg,var(--accent),#9b7bff);color:#fff;
+    padding:.28rem .6rem;border-radius:6px;
+  }
+  .bono-body{padding:1.4rem 1.4rem 1.5rem;display:flex;flex-direction:column;gap:.7rem;flex:1}
+  .bono-body h3{font-family:'Space Grotesk',sans-serif;font-weight:700;font-size:1.18rem;letter-spacing:-.01em;line-height:1.2}
+  .bono-body p{color:var(--muted);font-size:.92rem;flex:1}
+  .bono-body p strong{color:var(--ink);font-weight:600}
+  .bprice{
+    display:flex;align-items:center;justify-content:space-between;gap:.8rem;
+    border-top:1px solid rgba(255,255,255,.08);padding-top:1rem;margin-top:.4rem;
+  }
+  .bprice .real{font-size:.85rem;color:var(--muted)}
+  .bprice .real s{color:var(--ink);font-weight:700;font-size:1.05rem;text-decoration-color:var(--accent2);text-decoration-thickness:2px}
+  /* ══════════ 6 · TESTIMONIOS ══════════ */
+  .testi{
+    background:radial-gradient(700px 400px at 50% -5%, rgba(76,201,240,.08), transparent 70%), var(--bg2);
+    border-top:1px solid rgba(124,92,255,.15);text-align:center;
+  }
+  .testi .overline{
+    font-size:.74rem;font-weight:700;letter-spacing:.24em;text-transform:uppercase;
+    background:linear-gradient(92deg,var(--accent),var(--accent2));
+    -webkit-background-clip:text;background-clip:text;color:transparent;
+    display:block;margin-bottom:1rem;
+  }
+  .testi h2{max-width:22ch;margin:0 auto 1rem}
+  .testi > .wrap > .sub{max-width:52ch;margin:0 auto}
+  .t-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1.3rem;margin-top:3rem;text-align:left}
+  @media(max-width:900px){.t-grid{grid-template-columns:repeat(2,1fr)}}
+  @media(max-width:620px){.t-grid{grid-template-columns:1fr;max-width:440px;margin-left:auto;margin-right:auto}}
+  .t-card{
+    border:1px solid rgba(124,92,255,.18);border-radius:var(--r);
+    background:rgba(255,255,255,.02);padding:1.4rem;
+    display:flex;flex-direction:column;gap:.85rem;
+    transition:transform .15s ease, border-color .15s ease;
+  }
+  .t-card:hover{transform:translateY(-3px);border-color:rgba(124,92,255,.4)}
+  .t-card .stars{font-size:.82rem}
+  .t-card blockquote{font-size:.94rem;color:rgba(244,244,248,.85);line-height:1.6;flex:1}
+  .t-who{display:flex;align-items:center;gap:.75rem;padding-top:.9rem;border-top:1px solid rgba(255,255,255,.07)}
+  .t-who img{width:42px;height:42px;border-radius:50%;object-fit:cover;border:2px solid rgba(124,92,255,.55)}
+  .t-top{display:flex;align-items:center;justify-content:space-between;gap:.8rem}
+  .t-who > div{flex:1;min-width:0}
+  .t-who b{font-size:.88rem;display:block}
+  .t-who small{color:var(--muted);font-size:.72rem;display:block}
+  .t-verified{
+    display:inline-flex;align-items:center;gap:.3rem;margin-left:auto;flex:none;
+    font-size:.64rem;font-weight:700;color:#a8e6f8;
+    background:rgba(76,201,240,.10);border:1px solid rgba(76,201,240,.3);
+    border-radius:100px;padding:.2rem .55rem;white-space:nowrap;
+  }
+
+  /* ══════════ 8 · FOOTER ══════════ */
+  footer{
+    background:#08080C;border-top:1px solid rgba(124,92,255,.18);
+    padding:56px 0 40px;text-align:center;
+  }
+  .f-brand{
+    font-family:'Space Grotesk',sans-serif;font-weight:700;font-size:1.2rem;letter-spacing:-.01em;
+    background:linear-gradient(92deg,var(--accent),var(--accent2));
+    -webkit-background-clip:text;background-clip:text;color:transparent;
+    margin-bottom:1.2rem;
+  }
+  .f-social{display:flex;justify-content:center;gap:.9rem;margin-bottom:1.8rem}
+  .f-social a{
+    width:42px;height:42px;border-radius:50%;display:grid;place-items:center;
+    border:1px solid rgba(124,92,255,.3);color:var(--muted);
+    transition:color .15s ease, border-color .15s ease, transform .15s ease;
+  }
+  .f-social a:hover{color:var(--ink);border-color:var(--accent);transform:translateY(-2px)}
+  .f-social svg{width:19px;height:19px}
+  .f-links{display:flex;justify-content:center;flex-wrap:wrap;gap:.4rem 1.8rem;margin-bottom:1.8rem}
+  .f-links a{color:var(--muted);font-size:.85rem;font-weight:600;transition:color .15s ease}
+  .f-links a:hover{color:var(--ink)}
+  .f-disclaimer{
+    max-width:760px;margin:0 auto 1.6rem;font-size:.72rem;line-height:1.7;
+    color:rgba(154,153,168,.55);
+  }
+  .f-copy{font-size:.8rem;color:var(--muted)}
+
+  /* ══════════ 7 · FAQ ══════════ */
+  .faq-sec{background:var(--bg);text-align:center}
+  .faq-sec h2{max-width:20ch;margin:0 auto 1rem}
+  .faq-sec > .wrap > .sub{max-width:50ch;margin:0 auto}
+  .faq{max-width:680px;margin:2.8rem auto 0;display:grid;gap:.8rem;text-align:left}
+  .faq details{
+    border:1px solid rgba(124,92,255,.18);border-radius:14px;
+    background:rgba(255,255,255,.02);overflow:hidden;
+    transition:border-color .15s ease;
+  }
+  .faq details[open]{border-color:rgba(124,92,255,.45);background:rgba(124,92,255,.05)}
+  .faq summary{
+    cursor:pointer;list-style:none;display:flex;align-items:center;gap:1rem;
+    padding:1.1rem 1.3rem;font-weight:600;font-size:.98rem;color:var(--ink);
+  }
+  .faq summary::-webkit-details-marker{display:none}
+  .faq summary::after{
+    content:"+";margin-left:auto;flex:none;
+    width:28px;height:28px;border-radius:8px;
+    display:grid;place-items:center;font-weight:700;font-size:1.1rem;line-height:1;
+    background:linear-gradient(135deg,var(--accent),var(--accent2));color:#fff;
+    transition:transform .18s ease;
+  }
+  .faq details[open] summary::after{content:"–";transform:rotate(180deg)}
+  .faq details p{padding:0 1.3rem 1.2rem;color:var(--muted);font-size:.93rem;line-height:1.65}
+  .faq details p strong{color:var(--ink);font-weight:600}
+
+  /* ══════════ 5 · STACK OFFER ══════════ */
+  .offer{
+    background:
+      radial-gradient(800px 460px at 50% 20%, rgba(124,92,255,.20), transparent 68%),
+      var(--bg);
+    text-align:center;border-top:1px solid rgba(124,92,255,.15);
+  }
+  .offer h2{max-width:22ch;margin:0 auto 1rem}
+  .offer > .wrap > .sub{max-width:54ch;margin:0 auto}
+  .offer-wrap{position:relative;max-width:620px;margin:2.8rem auto 0}
+  .offer-wrap::before{
+    content:"";position:absolute;inset:-2px;border-radius:calc(var(--r) + 2px);z-index:0;
+    background:linear-gradient(140deg,var(--accent),var(--accent2),var(--accent));
+  }
+  .offer-card{position:relative;z-index:1;background:#0E0E16;border-radius:var(--r);overflow:hidden;text-align:left}
+  .offer-head{
+    padding:1.1rem 1.6rem;background:rgba(124,92,255,.10);border-bottom:1px solid rgba(124,92,255,.25);
+    font-family:'Space Grotesk',sans-serif;font-weight:700;font-size:.95rem;letter-spacing:.02em;text-align:center;
+  }
+  .offer-rows{padding:.6rem 1.6rem}
+  .offer-row{
+    display:flex;align-items:baseline;gap:1rem;justify-content:space-between;
+    padding:.85rem 0;border-bottom:1px dashed rgba(255,255,255,.10);font-size:.93rem;
+  }
+  .offer-row:last-child{border-bottom:0}
+  .offer-row .name{color:var(--ink);font-weight:600}
+  .offer-row .name small{display:block;color:var(--muted);font-weight:400;font-size:.8rem;margin-top:.1rem}
+  .offer-row .tag-b{
+    font-size:.6rem;font-weight:800;letter-spacing:.1em;text-transform:uppercase;
+    background:rgba(124,92,255,.18);border:1px solid rgba(124,92,255,.4);color:#cfc9ff;
+    border-radius:5px;padding:.1rem .4rem;margin-right:.5rem;vertical-align:middle;
+  }
+  .offer-row .val{color:var(--muted);font-weight:700;white-space:nowrap}
+  .offer-total{
+    background:rgba(255,255,255,.03);border-top:1px solid rgba(124,92,255,.25);
+    padding:1.6rem 1.6rem 1.9rem;text-align:center;
+  }
+  .offer-total .tv{font-size:.95rem;color:var(--muted)}
+  .offer-total .tv s{color:var(--ink);font-weight:800;font-size:1.25rem;text-decoration-color:var(--accent2);text-decoration-thickness:2.5px}
+  .offer-total .badge{
+    display:inline-block;margin-top:1.1rem;
+    background:linear-gradient(92deg,var(--accent),var(--accent2));color:#fff;
+    font-size:.66rem;font-weight:800;letter-spacing:.16em;text-transform:uppercase;
+    padding:.35rem .8rem;border-radius:100px;
+  }
+  .offer-total .now{
+    font-family:'Space Grotesk',sans-serif;font-weight:700;line-height:1;
+    font-size:clamp(3.4rem,9vw,5rem);margin:.6rem 0 .2rem;
+    background:linear-gradient(92deg,var(--accent) 10%,var(--accent2) 90%);
+    -webkit-background-clip:text;background-clip:text;color:transparent;
+  }
+  .offer-total .now small{font-size:.3em;color:var(--ink);-webkit-text-fill-color:var(--ink);vertical-align:super;font-weight:600}
+  .offer-total .terms{font-size:.82rem;color:var(--muted);margin-bottom:1.4rem}
+  .offer-total .btn{width:100%;max-width:420px}
+
+  .bprice .free{
+    background:linear-gradient(92deg,var(--accent),var(--accent2));color:#fff;
+    font-size:.72rem;font-weight:800;letter-spacing:.1em;text-transform:uppercase;
+    padding:.4rem .8rem;border-radius:8px;white-space:nowrap;
+    box-shadow:0 6px 18px rgba(124,92,255,.4);
+  }
+
+  /*
+  ═══════════════════════════════════════════════════════════════════
+  PRÓXIMAS SECCIONES (se irán armando una por una en esta dirección):
+  3 · ¿Esto es para ti?   4 · Por qué no es tu culpa   5 · Mecanismo 1
+  6 · Mecanismo 2 (animación)   7 · Prueba de nicho   8 · Resultados
+  9 · Todo lo que incluye   10 · Precio $17   11 · FAQ   12 · Cierre
+  ═══════════════════════════════════════════════════════════════════
+  */
+</style>
+</head>
+<body>
+
+<!-- ══════════ 1 · HERO ══════════ -->
+<header class="hero">
+  <div class="wrap">
+    <span class="kicker"><span class="dot"></span>+1250 profesionales ya confían en nuestro producto</span>
+    <h1>Deja de empezar cada video <span class="grad">desde cero</span></h1>
+    <p class="sub">El sistema en Notion que te deja el guion escrito: 12 plantillas con IA, 50 ganchos y un banco con 100 ideas que ya funcionaron en tu nicho.</p>
+    <p class="no-need">Sin editor. Sin agencia. Sin experiencia.</p>
+
+    <!-- Espacio VSL: cuando tengas el video, reemplaza el contenido de .vsl por tu <iframe> -->
+    <div class="vsl-wrap"><div class="vsl"><div class="play"></div><small>Video sales letter</small></div></div>
+
+    <a class="btn" data-cta href="#"><strong>Cópialo en tu Notion por $17</strong><span>Pago único. Lo duplicas en 60 segundos.</span></a>
+
+    <div class="proof">
+      <div class="avatars">
+        <img src="img/testimonios/Clara.jpg" alt=""><img src="img/testimonios/Seul.jpg" alt=""><img src="img/testimonios/Rosa.jpg" alt=""><img src="img/testimonios/Erika.jpg" alt="">
+      </div>
+      <p><span class="stars" aria-label="5 estrellas">★★★★★</span><br><b>+1250 profesionales</b> ya crean contenido con él</p>
+    </div>
+  </div>
+</header>
+
+<!-- ══════════ 2 · EL SISTEMA (estilo Ultimate Brain) ══════════ -->
+<section class="sistema">
+  <div class="wrap">
+    <h2>De la idea al video publicado, <span class="grad">sin salir de Notion</span></h2>
+    <p class="sub">Ideas, guiones, prompts de IA, 50 ganchos y tu calendario, conectados en un solo espacio. Eliges una idea que ya funcionó, la plantilla escribe contigo y sales a grabar.</p>
+
+    <div class="shot">
+      <div class="shot-bar"><i></i><i></i><i></i><em>Sistema de Guiones Virales — Notion</em></div>
+      <img src="img/producto/captura-sistema.jpg" alt="Captura del sistema de guiones virales abierto en Notion" loading="lazy">
+    </div>
+
+    <div class="shot-after">
+      <p>Lo duplicas con un clic y en <strong>60 segundos está dentro de tu Notion</strong>, con todo el contenido adentro. No instalas nada, no configuras nada: funciona con la cuenta gratuita.</p>
+      <p>Y no es una plantilla vacía. Trae las <strong>12 plantillas con su prompt de IA ya escrito al lado</strong>, la biblioteca de 50 ganchos a un clic y el banco de referentes armado, con las instrucciones para llenarlo con tu nicho la primera vez.</p>
+      <p class="closing">El sistema termina justo donde empieza la cámara: <span class="grad">con tu guion escrito, con tu voz, listo para grabar.</span></p>
+    </div>
+
+    <div class="scroll-cue" aria-hidden="true">
+      <svg viewBox="0 0 24 24" fill="none" stroke="url(#cueGrad)" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+        <defs><linearGradient id="cueGrad" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#7C5CFF"/><stop offset="1" stop-color="#4CC9F0"/></linearGradient></defs>
+        <path d="M6 9l6 6 6-6"/>
+      </svg>
+    </div>
+  </div>
+</section>
+
+<!-- ══════════ 3 · CARACTERÍSTICAS (zigzag estilo Ultimate Brain) ══════════
+     Cada .feat-media es una maqueta CSS provisional. Cuando tengas la captura real
+     de esa característica, reemplaza TODO el contenido de su .fm por:
+     <img src="img/producto/NOMBRE.jpg" alt="...">   (una imagen por característica) -->
+<section class="feats">
+  <div class="wrap">
+    <div class="intro">
+      <h2>Todo lo que necesitas para publicar, <span class="grad">en un solo espacio</span></h2>
+      <p class="sub">Así es el proceso, en cinco pasos.</p>
+    </div>
+
+    <!-- PASO 1 · La idea -->
+    <div class="feat">
+      <div class="feat-txt">
+        <div class="step-tag"><span class="n">01</span><span class="lbl">Paso</span></div>
+        <h3>💡 Toma una idea y métela al sistema</h3>
+        <p>Cualquier idea — de tu cabeza, de un comentario o del banco de referentes — se captura en el espacio de <strong>Ideas</strong> en segundos.</p>
+        <p>Ninguna vuelve a morir en las notas del celular: cuando te sientas a crear, la decisión de qué grabar <strong>ya está tomada desde antes</strong>.</p>
+      </div>
+      <div class="feat-media"><div class="fm">
+        <div class="fm-bar"><i></i><i></i><i></i><em>Ideas · captura rápida</em></div>
+        <div class="fm-body">
+          <div class="fm-input">＋ Escribe tu idea…</div>
+          <div class="fm-row"><span class="grow">La deducción que casi nadie usa</span><span class="fm-chip v">Nueva</span></div>
+          <div class="fm-row"><span class="grow">Mi primer cliente: qué haría distinto</span><span class="fm-chip a">Del banco</span></div>
+          <div class="fm-row"><span class="grow">3 errores al empezar en video</span><span class="fm-chip a">Del banco</span></div>
+        </div>
+      </div></div>
+    </div>
+
+    <!-- PASO 2 · El gancho -->
+    <div class="feat">
+      <div class="feat-txt">
+        <div class="step-tag"><span class="n">02</span><span class="lbl">Paso</span></div>
+        <h3>🪝 Elige uno de los 50 ganchos listos</h3>
+        <p>Los primeros 3 segundos deciden si te ven o te pasan de largo. Por eso el sistema trae una <strong>biblioteca de 50 aperturas ya escritas</strong>, clasificadas por tipo.</p>
+        <p>Cada gancho viene con su espacio en blanco: insertas tu tema y el inicio del video queda resuelto.</p>
+      </div>
+      <div class="feat-media"><div class="fm">
+        <div class="fm-bar"><i></i><i></i><i></i><em>Biblioteca · 50 ganchos</em></div>
+        <div class="fm-body">
+          <div class="fm-row"><span class="fm-num">01</span><span class="grow">«Hay una ___ que nadie te menciona»</span></div>
+          <div class="fm-row"><span class="fm-num">02</span><span class="grow">«Deja de hacer ___ si quieres ___»</span></div>
+          <div class="fm-row"><span class="fm-num">03</span><span class="grow">«El error que comete el 80% al ___»</span></div>
+          <div class="fm-row"><span class="fm-num">04</span><span class="grow">«Esto me tomó 5 años aprenderlo»</span></div>
+          <div class="fm-row"><span class="fm-num">05</span><span class="grow">«Nadie habla de esto en ___»</span></div>
+        </div>
+      </div></div>
+    </div>
+
+    <!-- PASO 3 · La plantilla -->
+    <div class="feat">
+      <div class="feat-txt">
+        <div class="step-tag"><span class="n">03</span><span class="lbl">Paso</span></div>
+        <h3>✍️ Pégala en una de las 12 plantillas que ya saben qué funciona</h3>
+        <p>Cada plantilla es una <strong>estructura de video testeada</strong>, construida estudiando el contenido que más se comparte y el patrón que se repite debajo.</p>
+        <p>Organizadas en tres categorías según lo que quieras lograr hoy: <strong>vender, construir autoridad o generar conversación</strong>. El esqueleto del guion ya está armado.</p>
+      </div>
+      <div class="feat-media"><div class="fm">
+        <div class="fm-bar"><i></i><i></i><i></i><em>Guiones · 12 plantillas</em></div>
+        <div class="fm-body">
+          <div class="fm-row"><span class="grow">Historias personales que venden</span><span class="fm-chip v">Vender</span></div>
+          <div class="fm-row"><span class="grow">Pitch perfecto en video</span><span class="fm-chip v">Vender</span></div>
+          <div class="fm-row"><span class="grow">Declaración falsa</span><span class="fm-chip a">Autoridad</span></div>
+          <div class="fm-row"><span class="grow">La regla de 3</span><span class="fm-chip a">Autoridad</span></div>
+          <div class="fm-row"><span class="grow">Cómo hacerlo</span><span class="fm-chip c">Conversación</span></div>
+        </div>
+      </div></div>
+    </div>
+
+    <!-- PASO 4 · El prompt -->
+    <div class="feat">
+      <div class="feat-txt">
+        <div class="step-tag"><span class="n">04</span><span class="lbl">Paso</span></div>
+        <h3>🤖 Activa el prompt: la IA escribe con tu voz</h3>
+        <p>Cada plantilla trae su <strong>prompt ya construido al lado</strong>: la estructura exacta, el tono, los segundos de cada bloque y la instrucción de escribir con tus palabras.</p>
+        <p>Lo copias, describes tu idea en una línea y te devuelve el guion armado. <strong>Los prompts genéricos dan guiones genéricos</strong> — estos no.</p>
+      </div>
+      <div class="feat-media"><div class="fm">
+        <div class="fm-bar"><i></i><i></i><i></i><em>Prompt · Plantilla #3</em></div>
+        <div class="fm-body">
+          <div class="fm-prompt"><b>Prompt de IA · listo para copiar</b>Actúa como guionista de video corto. Usa la estructura de la Plantilla #3 (autoridad), tono conversacional, 45 segundos, y escribe con las palabras de: [tu idea aquí]…</div>
+          <div class="fm-row"><span class="grow">Se adapta a tu nicho y a tu forma de hablar</span><span class="fm-copy">Copiar</span></div>
+        </div>
+      </div></div>
+    </div>
+
+    <!-- PASO 5 · El guion listo -->
+    <div class="feat">
+      <div class="feat-txt">
+        <div class="step-tag"><span class="n">05</span><span class="lbl">Paso</span></div>
+        <h3>🎬 Sal con tu guion listo en menos de 5 minutos</h3>
+        <p>El resultado: guion completo, <strong>con el gancho puesto, los segundos de cada bloque y tus palabras</strong> — no las de un robot.</p>
+        <p>El sistema termina justo donde empieza la cámara: <strong>con tu guion escrito, con tu voz, listo para grabar</strong>.</p>
+      </div>
+      <div class="feat-media"><div class="fm">
+        <div class="fm-bar"><i></i><i></i><i></i><em>Guion · listo para grabar</em></div>
+        <div class="fm-body">
+          <div class="fm-blk"><b>Gancho · 0:00–0:03</b>«Hay una deducción que tu contador no te menciona.»</div>
+          <div class="fm-blk"><b>Desarrollo · 0:03–0:35</b>El error común, el porqué y tu caso, contado con tus palabras.</div>
+          <div class="fm-blk"><b>Cierre · 0:35–0:45</b>«Guarda este video antes de tu próxima declaración.»</div>
+          <div class="fm-ok">✓ Listo para grabar · 45 segundos</div>
+        </div>
+      </div></div>
+    </div>
+
+    <!-- ADEMÁS · extras del sistema -->
+    <div class="extras-head">
+      <h3>Y además, dentro del <span class="grad">mismo sistema</span></h3>
+      <p>Dos piezas más que trabajan para ti entre video y video.</p>
+    </div>
+
+    <div class="extras">
+      <div class="extra">
+        <div class="fm">
+          <div class="fm-bar"><i></i><i></i><i></i><em>Banco de referentes · regla 10×10</em></div>
+          <img src="img/banco-referentes.png" alt="Banco de referentes con las ideas de la competencia mapeadas" loading="lazy">
+        </div>
+        <div>
+          <span class="emoji">🕵️</span>
+          <h4>Mapea a tus competidores</h4>
+          <p>La <strong>regla 10×10</strong>: registras 10 creadores de tu nicho y sus 10 videos más vistos. Son <strong>100 ideas que ya demostraron funcionar</strong>, en una sola tabla. Tomas el ángulo, no el video.</p>
+        </div>
+      </div>
+      <div class="extra">
+        <div class="fm">
+          <div class="fm-bar"><i></i><i></i><i></i><em>Accesos</em></div>
+          <div class="fm-body">
+            <div class="fm-row"><span class="grow">Instagram · cuenta principal</span><span class="fm-dots">••••••••</span></div>
+            <div class="fm-row"><span class="grow">TikTok</span><span class="fm-dots">••••••••</span></div>
+            <div class="fm-row"><span class="grow">CapCut</span><span class="fm-dots">••••••••</span></div>
+            <div class="fm-row"><span class="grow">YouTube Studio</span><span class="fm-dots">••••••••</span></div>
+          </div>
+        </div>
+        <div>
+          <span class="emoji">🔐</span>
+          <h4>Tus cuentas y accesos, en un solo lugar</h4>
+          <p>Un espacio para guardar las <strong>contraseñas y accesos de tus plataformas de contenido</strong>: redes, editores, herramientas de IA. Dejas de perder minutos buscando credenciales cada vez que vas a publicar.</p>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- ══════════ 4 · BONOS ══════════
+     Las portadas .bcover son maquetas CSS provisionales. Cuando tengas la portada
+     real de cada bono, reemplaza el contenido de su .bcover por:
+     <img src="img/producto/bono-1-camara.jpg" alt="..." style="width:100%;height:100%;object-fit:cover"> -->
+<section class="bonos">
+  <div class="wrap">
+    <span class="overline">🎁 Bonos incluidos hoy</span>
+    <h2>El sistema te deja el guion listo. <span class="grad">Estos bonos te llevan hasta publicar.</span></h2>
+    <p class="sub">Tres masterclass en video que cubren lo que viene después del guion: grabarlo, producirlo con IA y subirlo a tus redes.</p>
+
+    <div class="bono-grid">
+
+      <div class="bono-card">
+        <div class="bcover">
+          <span class="bnum">Bonus #1</span>
+          <div class="bplay"></div>
+        </div>
+        <div class="bono-body">
+          <h3>Crea contenido con el sistema + IA</h3>
+          <p>El proceso completo en video: duplicar el espacio, elegir la plantilla, activar el prompt y dejar tu contenido encaminado, <strong>apalancándote de la IA en cada paso</strong>. Sin relleno.</p>
+          <div class="bprice">
+            <span class="real">Valor real: <s>$47</s></span>
+            <span class="free">Gratis hoy</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="bono-card">
+        <div class="bcover">
+          <span class="bnum">Bonus #2</span>
+          <div class="bplay"></div>
+        </div>
+        <div class="bono-body">
+          <h3>Del guion a la cámara</h3>
+          <p>Cómo pasar tu guion terminado al celular y grabarlo <strong>sin que se note que estás leyendo</strong>: teleprompter, encuadre, luz y audio con lo que ya tienes en casa.</p>
+          <div class="bprice">
+            <span class="real">Valor real: <s>$67</s></span>
+            <span class="free">Gratis hoy</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="bono-card">
+        <div class="bcover">
+          <span class="bnum">Bonus #3</span>
+          <div class="bplay"></div>
+        </div>
+        <div class="bono-body">
+          <h3>Edita y súbelo a tus redes</h3>
+          <p>La edición mínima que un video necesita para publicarse: <strong>cortes, subtítulos y formato vertical</strong> en un editor gratuito, y cómo subirlo a cada red social.</p>
+          <div class="bprice">
+            <span class="real">Valor real: <s>$47</s></span>
+            <span class="free">Gratis hoy</span>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ══════════ 5 · STACK OFFER ══════════ -->
+<section class="offer">
+  <div class="wrap">
+    <h2>Todo lo que te llevas <span class="grad">hoy</span></h2>
+    <p class="sub">El sistema completo, más los tres bonos. Esto es lo que vale — y lo que pagas.</p>
+
+    <div class="offer-wrap"><div class="offer-card">
+      <div class="offer-head">📦 Sistema de Guiones Virales en Notion</div>
+      <div class="offer-rows">
+        <div class="offer-row">
+          <span class="name">Sistema completo en Notion<small>12 plantillas testeadas · 50 ganchos · prompts de IA con tu voz · banco de referentes 10×10 · calendario y accesos</small></span>
+          <span class="val">$197</span>
+        </div>
+        <div class="offer-row">
+          <span class="name"><span class="tag-b">Bonus 1</span>Crea contenido con el sistema + IA</span>
+          <span class="val">$47</span>
+        </div>
+        <div class="offer-row">
+          <span class="name"><span class="tag-b">Bonus 2</span>Del guion a la cámara</span>
+          <span class="val">$67</span>
+        </div>
+        <div class="offer-row">
+          <span class="name"><span class="tag-b">Bonus 3</span>Edita y súbelo a tus redes</span>
+          <span class="val">$47</span>
+        </div>
+      </div>
+      <div class="offer-total">
+        <p class="tv">Valor total: <s>$358 USD</s></p>
+        <span class="badge">Precio de lanzamiento</span>
+        <p class="now">$17<small>USD</small></p>
+        <p class="terms">Pago único · Acceso inmediato · Funciona con Notion gratis</p>
+        <a class="btn" data-cta href="#"><strong>Cópialo en tu Notion por $17</strong><span>Lo recibes al instante después del pago</span></a>
+      </div>
+    </div></div>
+  </div>
+</section>
+
+<!-- ══════════ 6 · TESTIMONIOS ══════════ -->
+<section class="testi">
+  <div class="wrap">
+    <span class="overline">★ Resultados reales</span>
+    <h2>Lo que dicen quienes <span class="grad">ya lo están usando</span></h2>
+    <p class="sub">Más de 1250 profesionales ya crean contenido con el sistema. Esto es lo que cuentan.</p>
+
+    <div class="t-grid">
+      <div class="t-card">
+        <div class="t-top"><span class="stars" aria-label="5 estrellas">★★★★★</span><span class="t-verified">✓ Compra verificada</span></div>
+        <blockquote>"Probé hacer guiones con IA antes, pero me salían muy genéricos. Con estos guiones se sienten mucho más naturales."</blockquote>
+        <div class="t-who">
+          <img src="img/testimonios/Seul.jpg" alt="Seul C" loading="lazy">
+          <div class="t-id"><b>Seul C</b><small>Usa el sistema con IA</small></div>
+        </div>
+      </div>
+      <div class="t-card">
+        <div class="t-top"><span class="stars" aria-label="5 estrellas">★★★★★</span><span class="t-verified">✓ Compra verificada</span></div>
+        <blockquote>"Me ayudó mucho. Sabía crear contenido, pero tener todo bien esquematizado en un sistema profesional facilitó mi trabajo."</blockquote>
+        <div class="t-who">
+          <img src="img/testimonios/Erika.jpg" alt="Erika N" loading="lazy">
+          <div class="t-id"><b>Erika N</b><small>Creadora de contenido</small></div>
+        </div>
+      </div>
+      <div class="t-card">
+        <div class="t-top"><span class="stars" aria-label="5 estrellas">★★★★★</span><span class="t-verified">✓ Compra verificada</span></div>
+        <blockquote>"Estoy empezando con mi marca personal y me ha facilitado muchísimo la generación de ideas. Ahora siempre sé por dónde empezar, sin complicarme."</blockquote>
+        <div class="t-who">
+          <img src="img/testimonios/Clara.jpg" alt="Clara A" loading="lazy">
+          <div class="t-id"><b>Clara A</b><small>Marca personal en construcción</small></div>
+        </div>
+      </div>
+      <div class="t-card">
+        <div class="t-top"><span class="stars" aria-label="5 estrellas">★★★★★</span><span class="t-verified">✓ Compra verificada</span></div>
+        <blockquote>"Qué lindiiii, el sistema es una locura. Te produce guiones virales en nada, estoy maravillada ✨"</blockquote>
+        <div class="t-who">
+          <img src="img/testimonios/Rosa.jpg" alt="Rosa A" loading="lazy">
+          <div class="t-id"><b>Rosa A</b><small>Miembro del sistema</small></div>
+        </div>
+      </div>
+      <div class="t-card">
+        <div class="t-top"><span class="stars" aria-label="5 estrellas">★★★★★</span><span class="t-verified">✓ Compra verificada</span></div>
+        <blockquote>"Quedé impresionada de lo fácil que es usarlo."</blockquote>
+        <div class="t-who">
+          <img src="img/testimonios/Anita.jpg" alt="Anita R" loading="lazy">
+          <div class="t-id"><b>Anita R</b><small>Miembro del sistema</small></div>
+        </div>
+      </div>
+      <div class="t-card">
+        <div class="t-top"><span class="stars" aria-label="5 estrellas">★★★★★</span><span class="t-verified">✓ Compra verificada</span></div>
+        <blockquote>"Bro, qué buen sistema. Te felicito, hiciste un gran trabajo creándolo."</blockquote>
+        <div class="t-who">
+          <img src="img/testimonios/Rae.jpg" alt="Rae W" loading="lazy">
+          <div class="t-id"><b>Rae W</b><small>Miembro del sistema</small></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ══════════ 7 · FAQ ══════════ -->
+<section class="faq-sec">
+  <div class="wrap">
+    <h2>Preguntas <span class="grad">frecuentes</span></h2>
+    <p class="sub">Lo que suelen preguntar antes de copiar el sistema.</p>
+
+    <div class="faq">
+      <details>
+        <summary>¿Necesito pagar Notion?</summary>
+        <p>No. Funciona completo con la <strong>cuenta gratuita</strong>. Si no tienes cuenta, la creas en dos minutos y duplicas el sistema con un clic.</p>
+      </details>
+      <details>
+        <summary>¿Cómo lo recibo?</summary>
+        <p>Al instante. Apenas se confirma el pago te llega el enlace para <strong>duplicarlo en tu Notion</strong>, junto con las tres masterclass de bonus.</p>
+      </details>
+      <details>
+        <summary>¿Es pago único o suscripción?</summary>
+        <p><strong>Pago único de $17.</strong> El sistema queda en tu cuenta para siempre, y las actualizaciones que le haga te llegan sin costo.</p>
+      </details>
+      <details>
+        <summary>¿Necesito saber grabar o editar?</summary>
+        <p>No. Por eso están los bonos 2 y 3: te muestro cómo <strong>grabar con el celular que ya tienes</strong> y cómo dejar el video listo con un editor gratuito, paso a paso.</p>
+      </details>
+      <details>
+        <summary>¿Sirve para mi nicho?</summary>
+        <p>Sí. Las plantillas son <strong>estructuras, no temas</strong> — el conocimiento lo pones tú. Los prompts incluyen la instrucción para adaptar cada guion a tu industria y a tu forma de hablar. Funciona igual en finanzas, derecho, fitness, salud, bienes raíces, marketing o consultoría.</p>
+      </details>
+      <details>
+        <summary>¿Cuánto tardo en tener mi primer guion?</summary>
+        <p>Menos de una hora desde que lo duplicas, siguiendo la masterclass del Bonus 1. Después, <strong>menos de 5 minutos por guion</strong>.</p>
+      </details>
+    </div>
+
+    <div class="cta-row" style="margin-top:3rem">
+      <a class="btn" data-cta href="#"><strong>Cópialo en tu Notion por $17</strong><span>Pago único · Acceso inmediato · Funciona con Notion gratis</span></a>
+    </div>
+  </div>
+</section>
+
+<!-- ══════════ 8 · FOOTER ══════════ -->
+<footer>
+  <div class="wrap">
+    <div class="f-social">
+      <a href="#" aria-label="Instagram"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4.2"/><circle cx="17.3" cy="6.7" r="1.1" fill="currentColor" stroke="none"/></svg></a>
+      <a href="#" aria-label="Facebook"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M13.5 21v-7.5h2.6l.4-3h-3V8.6c0-.9.3-1.5 1.6-1.5H16.6V4.4c-.3 0-1.2-.1-2.3-.1-2.3 0-3.8 1.4-3.8 3.9v2.3H8v3h2.5V21h3z"/></svg></a>
+      <a href="#" aria-label="YouTube"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M21.6 7.2a2.5 2.5 0 0 0-1.7-1.8C18.3 5 12 5 12 5s-6.3 0-7.9.4A2.5 2.5 0 0 0 2.4 7.2 26 26 0 0 0 2 12a26 26 0 0 0 .4 4.8 2.5 2.5 0 0 0 1.7 1.8c1.6.4 7.9.4 7.9.4s6.3 0 7.9-.4a2.5 2.5 0 0 0 1.7-1.8A26 26 0 0 0 22 12a26 26 0 0 0-.4-4.8zM10 15.2V8.8l5.5 3.2z"/></svg></a>
+    </div>
+
+    <div class="f-links">
+      <a href="#">Políticas de privacidad</a>
+      <a href="#">Términos y condiciones</a>
+    </div>
+
+    <p class="f-disclaimer">Este sitio no forma parte del sitio web de Facebook ni de Meta Platforms, Inc. Además, este sitio NO está respaldado por Facebook de ninguna manera. FACEBOOK es una marca registrada de Meta Platforms, Inc. Este sitio tampoco forma parte de Google, YouTube, Instagram, TikTok ni Notion Labs, Inc., ni cuenta con su respaldo. Notion es una marca registrada de Notion Labs, Inc.; este es un producto independiente y no está afiliado a Notion Labs, Inc.</p>
+
+    <p class="f-copy">© 2026 Jay Alvarez — Todos los derechos reservados.</p>
+  </div>
+</footer>
+
+<script>
+  document.querySelectorAll('a.btn[data-cta]').forEach(function (a) {
+    a.href = CHECKOUT_URL;
+    if (/^https?:/i.test(CHECKOUT_URL)) a.rel = 'noopener';
+  });
+</script>
+
+</body>
+</html>

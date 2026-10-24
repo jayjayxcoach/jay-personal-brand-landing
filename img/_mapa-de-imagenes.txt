@@ -1,0 +1,32 @@
+MAPA DE IMÁGENES — jay-personal-brand-landing
+=============================================
+Cómo actualizar una imagen: reemplaza el archivo por otro CON EL MISMO NOMBRE
+y la página se actualiza sola, sin tocar código.
+
+img/producto/
+  captura-sistema.jpg ....... Captura del sistema completo (sección 2 de la landing).
+                              HOY contiene la referencia de Ultimate Brain como relleno.
+                              REEMPLAZAR por la captura real de tu workspace en Notion.
+  (aquí irán las demás capturas del producto cuando las tomes)
+
+img/referencias/
+  ultimate-brain-referencia.jpg ... Captura de la página de Thomas Frank (Ultimate Brain).
+                                    Solo referencia de diseño. NO se muestra en la landing.
+
+img/testimonios/
+  Clara.jpg, Seul.jpg, Erika.jpg, Rosa.jpg, Anita.jpg, Rae.jpg
+  Fotos de los testimonios. Se usan en el hero (avatares) y en las secciones
+  de testimonios. Para cambiar una foto, reemplaza el archivo con el mismo nombre.
+
+img/  (archivos sueltos, de la versión anterior)
+  banco-referentes.png ...... Captura REAL del banco de referentes en Notion. SE USA.
+  workspace.png.png ......... Mockup viejo con la marca ICONICO. Ya no se usa (borrable).
+  ia-guion.png .............. Captura vieja. Ya no se usa (borrable).
+  nichos-comparativo.png .... Duplicado de banco-referentes. Ya no se usa (borrable).
+  bonus-1-camara.png,
+  bonus-2-edicion.png,
+  bonus-3-masterclass.png ... El mismo mockup repetido 3 veces. Ya no se usan (borrables).
+
+IMPORTANTE: para ver la página con las imágenes, abre el archivo .html
+DESDE ESTA CARPETA (doble clic). Si lo abres desde la vista previa del chat
+de Claude, las imágenes no cargan porque ahí no existe la carpeta img/.

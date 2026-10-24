@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Hero — 3 alternativas de diseño (sin amarillo)</title>
+<meta name="description" content="Tres propuestas de hero para la landing del Sistema de Guiones Virales en Notion. Comparar y elegir una.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Space+Grotesk:wght@400;500;700&family=Fraunces:opsz,wght@9..144,400;9..144,600;9..144,700&family=Instrument+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+  *{margin:0;padding:0;box-sizing:border-box}
+  html{scroll-behavior:smooth}
+  body{font-family:'Inter',system-ui,sans-serif;line-height:1.6;-webkit-font-smoothing:antialiased;background:#e9e9ee}
+  img{max-width:100%;display:block}
+  a{text-decoration:none;color:inherit}
+  .wrap{max-width:1020px;margin:0 auto;padding:0 22px}
+
+  /* barra separadora entre alternativas (solo para comparar; no va en la página final) */
+  .divider{
+    background:#0f0f12;color:#fff;padding:.9rem 22px;
+    font-size:.78rem;font-weight:700;letter-spacing:.18em;text-transform:uppercase;
+    display:flex;align-items:center;gap:.8rem;flex-wrap:wrap;
+  }
+  .divider b{background:#fff;color:#0f0f12;border-radius:5px;padding:.15rem .55rem;font-size:.72rem}
+  .divider span{opacity:.6;font-weight:500;letter-spacing:.02em;text-transform:none}
+
+  /* ═══════════════════════════════════════════════════════════════
+     A · NOTION CLEAN — escuela Thomas Frank / Easlo
+     Blanco, tinta, un solo acento azul Notion. Nativo del ecosistema.
+     ═══════════════════════════════════════════════════════════════ */
+  .va{
+    --ink:#191918;--muted:#6f6e69;--accent:#2383E2;--accent-d:#1a6dbf;
+    --line:#e7e5e0;--bg:#ffffff;
+    background:var(--bg);color:var(--ink);
+    font-family:'Inter',system-ui,sans-serif;
+    padding:76px 0 88px;text-align:center;
+  }
+  .va .eyebrow{
+    display:inline-flex;align-items:center;gap:.5rem;
+    font-size:.8rem;font-weight:600;color:var(--muted);
+    border:1px solid var(--line);border-radius:100px;background:#fafaf8;
+    padding:.4rem 1rem;margin-bottom:1.7rem;
+  }
+  .va .eyebrow .dot{width:7px;height:7px;border-radius:50%;background:var(--accent)}
+  .va h1{
+    font-size:clamp(2.3rem,5.6vw,3.9rem);font-weight:800;letter-spacing:-.035em;line-height:1.05;
+    max-width:17ch;margin:0 auto 1.1rem;
+  }
+  .va h1 em{font-style:normal;color:var(--accent)}
+  .va .sub{font-size:clamp(1.02rem,1.9vw,1.2rem);color:var(--muted);max-width:58ch;margin:0 auto .5rem;font-weight:500}
+  .va .no-need{font-size:.9rem;font-weight:600;color:var(--ink);margin-bottom:2.5rem}
+  .va .vsl{
+    max-width:760px;margin:0 auto 2.3rem;aspect-ratio:16/9;border-radius:14px;
+    background:#0f0f12;position:relative;overflow:hidden;
+    box-shadow:0 1px 2px rgba(0,0,0,.08), 0 24px 60px -12px rgba(25,25,24,.28);
+    border:1px solid rgba(0,0,0,.35);
+    display:flex;flex-direction:column;align-items:center;justify-content:center;gap:14px;
+  }
+  .va .vsl .play{
+    width:76px;height:76px;border-radius:50%;background:var(--accent);
+    display:grid;place-items:center;box-shadow:0 8px 30px rgba(35,131,226,.5);
+  }
+  .va .vsl .play::after{content:"";border-style:solid;border-width:13px 0 13px 21px;border-color:transparent transparent transparent #fff;margin-left:5px}
+  .va .vsl small{color:rgba(255,255,255,.55);font-size:.72rem;font-weight:600;letter-spacing:.22em;text-transform:uppercase}
+  .va .btn{
+    display:inline-flex;flex-direction:column;gap:.15rem;align-items:center;
+    background:var(--accent);color:#fff;border-radius:10px;padding:1.05rem 2.6rem;
+    box-shadow:0 1px 0 var(--accent-d), 0 10px 26px rgba(35,131,226,.35);
+    transition:transform .12s ease, box-shadow .12s ease;
+  }
+  .va .btn:hover{transform:translateY(-2px);box-shadow:0 1px 0 var(--accent-d), 0 14px 32px rgba(35,131,226,.45)}
+  .va .btn strong{font-size:1.08rem;font-weight:700;letter-spacing:-.01em}
+  .va .btn span{font-size:.78rem;font-weight:500;color:rgba(255,255,255,.75)}
+  .va .proof{display:flex;align-items:center;justify-content:center;gap:.9rem;margin-top:1.7rem;text-align:left}
+  .va .proof p{font-size:.85rem;color:var(--muted);line-height:1.4}
+  .va .proof b{color:var(--ink)}
+  .va .avatars{display:flex}
+  .va .avatars img{width:38px;height:38px;border-radius:50%;object-fit:cover;border:2px solid #fff;margin-left:-9px;box-shadow:0 1px 4px rgba(0,0,0,.14)}
+  .va .avatars img:first-child{margin-left:0}
+  .va .stars{color:#f59e0b;font-size:.8rem;letter-spacing:.12em}
+
+  /* ═══════════════════════════════════════════════════════════════
+     B · ESTUDIO OSCURO — escuela VSL / info-producto (Hotmart)
+     Casi negro, violeta eléctrico, glow en el video. Energía de lanzamiento.
+     ═══════════════════════════════════════════════════════════════ */
+  .vb{
+    --bg:#0B0B10;--ink:#F4F4F8;--muted:#9a99a8;--accent:#7C5CFF;--accent2:#4CC9F0;
+    background:
+      radial-gradient(900px 480px at 50% -12%, rgba(124,92,255,.28), transparent 65%),
+      var(--bg);
+    color:var(--ink);font-family:'Inter',system-ui,sans-serif;
+    padding:76px 0 92px;text-align:center;overflow:hidden;
+  }
+  .vb .eyebrow{
+    display:inline-flex;align-items:center;gap:.55rem;
+    font-size:.75rem;font-weight:700;letter-spacing:.1em;text-transform:uppercase;
+    color:#cfc9ff;background:rgba(124,92,255,.14);border:1px solid rgba(124,92,255,.45);
+    border-radius:100px;padding:.45rem 1.1rem;margin-bottom:1.8rem;
+  }
+  .vb .eyebrow .dot{width:8px;height:8px;border-radius:50%;background:var(--accent);box-shadow:0 0 12px var(--accent)}
+  .vb h1{
+    font-family:'Space Grotesk',sans-serif;font-weight:700;letter-spacing:-.03em;line-height:1.04;
+    font-size:clamp(2.4rem,6vw,4.1rem);max-width:18ch;margin:0 auto 1.1rem;
+  }
+  .vb h1 em{
+    font-style:normal;
+    background:linear-gradient(92deg,var(--accent) 10%,var(--accent2) 90%);
+    -webkit-background-clip:text;background-clip:text;color:transparent;
+  }
+  .vb .sub{font-size:clamp(1rem,1.9vw,1.18rem);color:var(--muted);max-width:58ch;margin:0 auto .5rem}
+  .vb .no-need{font-size:.9rem;font-weight:600;color:var(--ink);opacity:.85;margin-bottom:2.6rem}
+  .vb .vsl-wrap{position:relative;max-width:780px;margin:0 auto 2.4rem}
+  .vb .vsl-wrap::before{
+    content:"";position:absolute;inset:-3px;border-radius:18px;z-index:0;
+    background:linear-gradient(120deg,var(--accent),var(--accent2),var(--accent));
+    filter:blur(1px);
+  }
+  .vb .vsl-wrap::after{
+    content:"";position:absolute;inset:-40px;border-radius:40px;z-index:-1;
+    background:radial-gradient(closest-side,rgba(124,92,255,.4),transparent 70%);
+    filter:blur(30px);
+  }
+  .vb .vsl{
+    position:relative;z-index:1;aspect-ratio:16/9;border-radius:16px;background:#101018;
+    display:flex;flex-direction:column;align-items:center;justify-content:center;gap:14px;overflow:hidden;
+  }
+  .vb .vsl .play{
+    width:80px;height:80px;border-radius:50%;
+    background:linear-gradient(135deg,var(--accent),var(--accent2));
+    display:grid;place-items:center;box-shadow:0 10px 40px rgba(124,92,255,.55);
+  }
+  .vb .vsl .play::after{content:"";border-style:solid;border-width:13px 0 13px 21px;border-color:transparent transparent transparent #fff;margin-left:5px}
+  .vb .vsl small{color:rgba(244,244,248,.5);font-size:.72rem;font-weight:600;letter-spacing:.22em;text-transform:uppercase}
+  .vb .btn{
+    display:inline-flex;flex-direction:column;gap:.15rem;align-items:center;
+    background:linear-gradient(92deg,var(--accent),#9b7bff);color:#fff;border-radius:12px;
+    padding:1.1rem 2.7rem;box-shadow:0 12px 34px rgba(124,92,255,.45);
+    transition:transform .12s ease, box-shadow .12s ease;
+  }
+  .vb .btn:hover{transform:translateY(-2px);box-shadow:0 16px 40px rgba(124,92,255,.6)}
+  .vb .btn strong{font-family:'Space Grotesk',sans-serif;font-size:1.12rem;font-weight:700}
+  .vb .btn span{font-size:.78rem;color:rgba(255,255,255,.78)}
+  .vb .proof{display:flex;align-items:center;justify-content:center;gap:.9rem;margin-top:1.8rem;text-align:left}
+  .vb .proof p{font-size:.85rem;color:var(--muted);line-height:1.4}
+  .vb .proof b{color:var(--ink)}
+  .vb .avatars{display:flex}
+  .vb .avatars img{width:38px;height:38px;border-radius:50%;object-fit:cover;border:2px solid #0B0B10;margin-left:-9px}
+  .vb .avatars img:first-child{margin-left:0}
+  .vb .stars{color:var(--accent2);font-size:.8rem;letter-spacing:.12em}
+
+  /* ═══════════════════════════════════════════════════════════════
+     C · EDITORIAL PREMIUM — para profesionales serios
+     Papel cálido, serif display, acento terracota. Autoridad y calma.
+     ═══════════════════════════════════════════════════════════════ */
+  .vc{
+    --bg:#FAF6F0;--ink:#23211C;--muted:#75705F;--accent:#C65B37;--accent-d:#a84a2b;
+    --line:#e5ddd0;
+    background:var(--bg);color:var(--ink);
+    font-family:'Instrument Sans',system-ui,sans-serif;
+    padding:76px 0 92px;text-align:center;
+  }
+  .vc .eyebrow{
+    display:inline-flex;align-items:center;gap:.9rem;
+    font-size:.72rem;font-weight:600;letter-spacing:.22em;text-transform:uppercase;color:var(--muted);
+    margin-bottom:1.9rem;
+  }
+  .vc .eyebrow::before,.vc .eyebrow::after{content:"";width:44px;height:1px;background:var(--muted);opacity:.5}
+  .vc h1{
+    font-family:'Fraunces',serif;font-weight:600;letter-spacing:-.015em;line-height:1.06;
+    font-size:clamp(2.4rem,5.8vw,4rem);max-width:19ch;margin:0 auto 1.2rem;
+  }
+  .vc h1 em{font-style:italic;color:var(--accent)}
+  .vc .sub{font-size:clamp(1rem,1.9vw,1.16rem);color:var(--muted);max-width:56ch;margin:0 auto .5rem}
+  .vc .no-need{font-size:.88rem;font-weight:600;letter-spacing:.04em;margin-bottom:2.6rem}
+  .vc .vsl-frame{
+    max-width:780px;margin:0 auto 2.4rem;padding:10px;border-radius:18px;
+    background:#fff;border:1px solid var(--line);
+    box-shadow:0 2px 6px rgba(35,33,28,.05), 0 30px 70px -20px rgba(35,33,28,.25);
+  }
+  .vc .vsl{
+    aspect-ratio:16/9;border-radius:10px;background:#191713;
+    display:flex;flex-direction:column;align-items:center;justify-content:center;gap:14px;overflow:hidden;
+  }
+  .vc .vsl .play{
+    width:76px;height:76px;border-radius:50%;background:var(--accent);
+    display:grid;place-items:center;box-shadow:0 8px 30px rgba(198,91,55,.5);
+  }
+  .vc .vsl .play::after{content:"";border-style:solid;border-width:13px 0 13px 21px;border-color:transparent transparent transparent #fff;margin-left:5px}
+  .vc .vsl small{color:rgba(250,246,240,.5);font-size:.72rem;font-weight:600;letter-spacing:.22em;text-transform:uppercase}
+  .vc .btn{
+    display:inline-flex;flex-direction:column;gap:.15rem;align-items:center;
+    background:var(--ink);color:#FAF6F0;border-radius:100px;padding:1.05rem 2.8rem;
+    box-shadow:0 12px 30px rgba(35,33,28,.28);
+    transition:transform .12s ease, box-shadow .12s ease, background .12s ease;
+  }
+  .vc .btn:hover{transform:translateY(-2px);background:var(--accent)}
+  .vc .btn strong{font-size:1.06rem;font-weight:700;letter-spacing:0}
+  .vc .btn span{font-size:.78rem;color:rgba(250,246,240,.72)}
+  .vc .proof{display:flex;align-items:center;justify-content:center;gap:.9rem;margin-top:1.8rem;text-align:left}
+  .vc .proof p{font-size:.85rem;color:var(--muted);line-height:1.4}
+  .vc .proof b{color:var(--ink)}
+  .vc .avatars{display:flex}
+  .vc .avatars img{width:38px;height:38px;border-radius:50%;object-fit:cover;border:2px solid var(--bg);margin-left:-9px;box-shadow:0 1px 4px rgba(0,0,0,.15)}
+  .vc .avatars img:first-child{margin-left:0}
+  .vc .stars{color:var(--accent);font-size:.8rem;letter-spacing:.12em}
+
+  @media(max-width:640px){
+    .va,.vb,.vc{padding:54px 0 64px}
+    .va .proof,.vb .proof,.vc .proof{flex-direction:column;gap:.6rem;text-align:center}
+  }
+</style>
+</head>
+<body>
+
+<!-- ════════════ ALTERNATIVA A ════════════ -->
+<div class="divider"><b>A</b>NOTION CLEAN<span>— escuela Thomas Frank / Easlo: blanco, tinta, acento azul Notion</span></div>
+<section class="va">
+  <div class="wrap">
+    <span class="eyebrow"><span class="dot"></span>+1250 profesionales ya confían en nuestro producto</span>
+    <h1>Deja de empezar cada video <em>desde cero</em></h1>
+    <p class="sub">El sistema en Notion que te deja el guion escrito: 12 plantillas con IA, 50 ganchos y un banco con 100 ideas que ya funcionaron en tu nicho.</p>
+    <p class="no-need">Sin editor. Sin agencia. Sin experiencia.</p>
+
+    <!-- Espacio VSL: reemplazar este bloque por el <iframe> del video -->
+    <div class="vsl"><div class="play"></div><small>Video sales letter</small></div>
+
+    <a class="btn" href="#"><strong>Cópialo en tu Notion por $9</strong><span>Pago único. Lo duplicas en 60 segundos.</span></a>
+
+    <div class="proof">
+      <div class="avatars">
+        <img src="img/testimonios/Clara.jpg" alt=""><img src="img/testimonios/Seul.jpg" alt=""><img src="img/testimonios/Rosa.jpg" alt=""><img src="img/testimonios/Erika.jpg" alt="">
+      </div>
+      <p><span class="stars">★★★★★</span><br><b>+1250 profesionales</b> ya crean contenido con él</p>
+    </div>
+  </div>
+</section>
+
+<!-- ════════════ ALTERNATIVA B ════════════ -->
+<div class="divider"><b>B</b>ESTUDIO OSCURO<span>— escuela VSL / info-producto: fondo negro, violeta eléctrico, glow en el video</span></div>
+<section class="vb">
+  <div class="wrap">
+    <span class="eyebrow"><span class="dot"></span>+1250 profesionales ya confían en nuestro producto</span>
+    <h1>Deja de empezar cada video <em>desde cero</em></h1>
+    <p class="sub">El sistema en Notion que te deja el guion escrito: 12 plantillas con IA, 50 ganchos y un banco con 100 ideas que ya funcionaron en tu nicho.</p>
+    <p class="no-need">Sin editor. Sin agencia. Sin experiencia.</p>
+
+    <!-- Espacio VSL: reemplazar este bloque por el <iframe> del video -->
+    <div class="vsl-wrap"><div class="vsl"><div class="play"></div><small>Video sales letter</small></div></div>
+
+    <a class="btn" href="#"><strong>Cópialo en tu Notion por $9</strong><span>Pago único. Lo duplicas en 60 segundos.</span></a>
+
+    <div class="proof">
+      <div class="avatars">
+        <img src="img/testimonios/Clara.jpg" alt=""><img src="img/testimonios/Seul.jpg" alt=""><img src="img/testimonios/Rosa.jpg" alt=""><img src="img/testimonios/Erika.jpg" alt="">
+      </div>
+      <p><span class="stars">★★★★★</span><br><b>+1250 profesionales</b> ya crean contenido con él</p>
+    </div>
+  </div>
+</section>
+
+<!-- ════════════ ALTERNATIVA C ════════════ -->
+<div class="divider"><b>C</b>EDITORIAL PREMIUM<span>— papel cálido, serif, acento terracota: autoridad para profesionales</span></div>
+<section class="vc">
+  <div class="wrap">
+    <span class="eyebrow">+1250 profesionales ya confían en nuestro producto</span>
+    <h1>Deja de empezar cada video <em>desde cero</em></h1>
+    <p class="sub">El sistema en Notion que te deja el guion escrito: 12 plantillas con IA, 50 ganchos y un banco con 100 ideas que ya funcionaron en tu nicho.</p>
+    <p class="no-need">Sin editor. Sin agencia. Sin experiencia.</p>
+
+    <!-- Espacio VSL: reemplazar este bloque por el <iframe> del video -->
+    <div class="vsl-frame"><div class="vsl"><div class="play"></div><small>Video sales letter</small></div></div>
+
+    <a class="btn" href="#"><strong>Cópialo en tu Notion por $9</strong><span>Pago único. Lo duplicas en 60 segundos.</span></a>
+
+    <div class="proof">
+      <div class="avatars">
+        <img src="img/testimonios/Clara.jpg" alt=""><img src="img/testimonios/Seul.jpg" alt=""><img src="img/testimonios/Rosa.jpg" alt=""><img src="img/testimonios/Erika.jpg" alt="">
+      </div>
+      <p><span class="stars">★★★★★</span><br><b>+1250 profesionales</b> ya crean contenido con él</p>
+    </div>
+  </div>
+</section>
+
+</body>
+</html>
